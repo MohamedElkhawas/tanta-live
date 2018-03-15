@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="view-port" content="width=device-width, initial-sacle=1.0">
+        <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <title>Brand Shop</title>
+        <link rel="shortcut icon" href="1486755074_rocket.png" type="image/x-icon" />
+        <link rel="icon" href="1486755074_rocket.png" type="image/x-icon" /> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+         <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+      
+        
+       
+    </head>
+    <body>
+       
+        
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+              duration: 1200,
+            })
+        </script>
+       <!------------------------------------------------------>
+<!------------------------------nav bar--------------------------------->
+    
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+<!------------------نعمل زرار اول مندوس علية يظهر القايمة بيكون فالشاشات الصغيرة ------------------->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <!----data-targetعشان يفتحلى الجزء الى انا عايزة بالاى دى --->
+        <span class="sr-only">Toggle navigation</span>
+<!-------------------------------------التلت شرط بتوع الزرار ----------------------->                                        
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+   <!------------------------------------نهاية كود الزرار-------------------------------->
+      <a class="navbar-brand" href="#slideshow" data-aos="zoom-in-down"data-aos-duration="2500"> <i class="fa fa-rocket fa-x fotter-icon"></i> TAnTA LivE</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <!--------------------------------search form ------------------------------->
+        <!-----------------------navbar-left يعنى هات الفورم على الشمال ---------------------->
+      
+       <ul class="nav navbar-nav nav navbar-left">
+            <li class="active"><a href="#myslide"><i class="fa fa-home" data-aos="zoom-in-down" data-aos-duration="2500"></i>  Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="#contact"><i class="fa fa-envelope fa-x" data-aos="zoom-in-down" data-aos-duration="2500"></i>  Contact</a></li>
+             <li class="dropdown">
+                <a href="#Our_Product" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart fa-x" data-aos="zoom-in-down" data-aos-duration="1500"></i>  product <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-mobile  fa-x" data-aos="zoom-in-down" data-aos-duration="2500"></i>  mobile</a></li>
+                <li><a href="#"><i class="fa fa-desktop fa-x" data-aos="zoom-in-down" data-aos-duration="2500"></i> T.V</a></li>
+                <li><a href="#"><i class="fa fa-tablet fa-x" data-aos="zoom-in-down" data-aos-duration="2500"></i> Tablet</a></li>
+                <li><a href="#"><i class="fa fa-laptop fa-x" data-aos="zoom-in-down" data-aos-duration="2500"></i> Laptop</a></li>
+                <li><a href="#"><i class="fa fa-plug fa-x" data-aos="zoom-in-down" data-aos-duration="2500"></i> elctronics</a></li>
+            </ul>
+        </li>
+            <!-------------------------------end dropdawn------------------------------->
+           <li><button class="loginButton" href="#"><i data-toggle="modal" data-target="#loginModal" class="fa fa-sign-in" data-aos="zoom-in-down" data-aos-duration="2500"></i>  Login</button></li>
+           
+           <!-- Modal begins --> 
+           
+           <div class="modal" id="loginModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">X</button>
+                            <h3>Sign in to Tantalive</h3>
+                        </div>
+                        <div class="modal-body">
+                            
+                        </div>
+                    </div>        
+                </div>
+           </div>
+           
+           <!-- Modal ends --> 
+            
+        
+            
+        <!------------------------------------dropdown------------------------------>
+        </ul>
+        <ul class="nav navbar-nav nav navbar-right search-ul">
+            <li class="search-li" style="width:70%;float:left">
+                <form class="navbar-form navbar-right">
+                    <div class="search form-group">
+                        <input type="text" class="form-control search-input" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-search"><i class="fa fa-search" style="color:red;"data-aos="zoom-in-down"data-aos-duration="1500"></i></button>
+                </form>
+                <div class="searchBox">
+                        <ul>
+                            <li>
+                                <label style="font-weight:bold">
+                                    <input type="checkbox"> All Categories
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Baby
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Bags
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Books
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Cell phones
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Computers
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Customs
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Food
+                                </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Music
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Baby
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Books
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Cell phones
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Computers
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Customs
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Food
+                                </label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Music
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Baby
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Bags
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Books
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Cell phones
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Computers
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox"> Food
+                                </label>
+                            </li>
+                        </ul>
+                        
+                    </div>
+            </li>
+          <li class="cart cart-overview" style="float:right;width:20%">
+            <a href="#"><i class="fa fa-shopping-cart fa-x" data-aos="zoom-in-down" data-aos-duration="2500"></i> (0)</a>
+          </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!---------------------------------------end of nav-------------------------------->
+
+<!---------------------------------------slide show-------------------------------->
+        <div id="myslide" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myslide" data-slide-to="0" class="active"></li>
+    <li data-target="myslide" data-slide-to="1"></li>
+    <li data-target="#myslide" data-slide-to="2"></li>
+    <li data-target="#myslide" data-slide-to="3"></li>
+     <li data-target="#myslide" data-slide-to="4"></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="works-img3.jpg" alt="..."width="100%" height="100%">
+      <div class="carousel-caption">
+          <!--اكتب تحت الصورة-->
+          <div class="btn btn-primary slid-btn"data-aos="zoom-in"data-aos-duration="1500">Read more</div>&emsp;&emsp;
+          <div class="btn btn-danger slid-btn"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+      </div>
+    </div>
+    <div class="item">
+     <img src="ap.jpg" alt="..." height="100%" width="100%">
+      <div class="carousel-caption">
+          <div class="btn btn-primary slid-btn"data-aos="zoom-in"data-aos-duration="1500">Read more</div>&emsp;&emsp;
+          <div class="btn btn-danger slid-btn"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+      </div>
+    </div>
+      <div class="item">
+       <img src="img.jpg" alt="..." width="100%" height="100%">
+      <div class="carousel-caption">
+          <div class="btn btn-primary slid-btn"data-aos="zoom-in"data-aos-duration="1500">Read more</div>&emsp;&emsp;
+          <div class="btn btn-danger slid-btn"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+      </div>
+    </div>
+      <div class="item">
+      <img src="iphone75colors-800x438.jpg" alt="..."width="100%" height="100%">
+      <div class="carousel-caption">
+          <div class="btn btn-primary slid-btn"data-aos="zoom-in"data-aos-duration="1500">Read more</div>&emsp;&emsp;
+          <div class="btn btn-danger slid-btn"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+      </div>
+    </div>
+      <div class="item">
+     <img src="ap.jpg" alt="..." height="100%" width="100%">
+      <div class="carousel-caption">
+          <div class="btn btn-primary slid-btn"data-aos="zoom-in"data-aos-duration="1500">Read more</div>&emsp;&emsp;
+          <div class="btn btn-danger slid-btn"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+      </div>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myslide" role="button" data-slide="prev">
+   <i class="fa fa-angle-left fa-3x" style="font-size:55px;margin-top:200px;margin-left:0px"></i>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myslide" role="button" data-slide="next">
+  <i class="fa fa-angle-right fa-3x" style="font-size:55px;margin-top:200px;margin-right:0px"></i>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-------------------------------------end slide show----------------------------------->
+ 
+<!---------------------------------------our new product------------------------------------>
+        <section class="galary text-center" id="Our-Product">
+        <div class="container">
+            <h1><span>New</span> Product</h1>
+            <hr class="wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+            <div class="row">
+             <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Car</a></li>
+                <li><a data-toggle="tab" href="#menu1">Smart Phone</a></li>
+                <li><a data-toggle="tab" href="#menu2">Laptop</a></li>
+                <li><a data-toggle="tab" href="#menu3">Tv</a></li>
+                <li><a data-toggle="tab" href="#menu4">elctronic</a></li>
+                <li><a data-toggle="tab" href="#menu5">Tablt</a></li>
+                <li><a data-toggle="tab" href="#menu6">Music</a></li>
+                <li><a data-toggle="tab" href="#menu7">Other</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                   <div class="col-xs-12 col-md-3 galary-affect" id="a1">
+                <div class="products text-center">
+                        <img src="work_1.jpg"data-aos="zoom-in">
+                        
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                        
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="a1">
+                <div class="products text-center">
+                        <img src="work_2.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div> 
+                </div>
+            </div>
+                           <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_1.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+             <div class="col-xs-12 col-md-3 galary-affect" id="b1">
+                <div class="products text-center">
+                        <img src="work_3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                          </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_2.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                             <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_4.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+         
+            <div class="col-xs-12 col-md-3 galary-affect"id="a1">
+                <div class="products text-center">
+                        <img src="work_4.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="a1">
+                <div class="products text-center">
+                        <img src="work_3.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+                     <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center"data-aos="zoom-in">
+                         <img src="ap.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+             <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                 <div class="products text-center">
+                        <img src="work_6.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                 </div>
+            </div>
+             <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                 <div class="products text-center">
+                        <img src="works-img3.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                 </div>
+            </div>
+             <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                 <div class="products text-center">
+                 <img src="work_5.jpg"data-aos="zoom-in">   
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                 </div>
+            </div>
+                <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_1.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_2.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                             <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_4.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect" id="b1">
+                <div class="products text-center">
+                        <img src="work_3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                          </div>
+                </div>
+            </div>
+                    <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                  <div id="menu2" class="tab-pane fade">
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                   <div class="products text-center"data-aos="zoom-in">
+                        <img src="ap.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                   </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="work_6.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                  </div>
+                <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="works-img3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                     <div class="products text-center">
+                         <img src="work_5.jpg"data-aos="zoom-in">   
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                     </div>
+                 </div>
+                    <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                   <div class="products text-center"data-aos="zoom-in">
+                        <img src="ap.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                   </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="work_6.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                  </div>
+                <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="works-img3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                     <div class="products text-center">
+                         <img src="work_5.jpg"data-aos="zoom-in">   
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                     </div>
+                 </div>
+                    <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                  <div id="menu4" class="tab-pane fade">
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                   <div class="products text-center"data-aos="zoom-in">
+                        <img src="ap.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                   </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="work_6.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                  </div>
+                <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="works-img3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                     <div class="products text-center">
+                         <img src="work_5.jpg"data-aos="zoom-in">   
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                     </div>
+                 </div>
+                    <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                  <div id="menu5" class="tab-pane fade">
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                   <div class="products text-center"data-aos="zoom-in">
+                        <img src="ap.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                   </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="work_6.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                  </div>
+                <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="works-img3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                     <div class="products text-center">
+                         <img src="work_5.jpg"data-aos="zoom-in">   
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                     </div>
+                 </div>
+                    <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                  <div id="menu6" class="tab-pane fade">
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                   <div class="products text-center"data-aos="zoom-in">
+                        <img src="ap.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                   </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="work_6.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                  </div>
+                <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="works-img3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                     <div class="products text-center">
+                         <img src="work_5.jpg"data-aos="zoom-in">   
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                     </div>
+                 </div>
+                    <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                  <div id="menu7" class="tab-pane fade">
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                   <div class="products text-center"data-aos="zoom-in">
+                        <img src="ap.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                   </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="work_6.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                  </div>
+                <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="works-img3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                     <div class="products text-center">
+                         <img src="work_5.jpg"data-aos="zoom-in">   
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                     </div>
+                 </div>
+                    <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                  
+                
+              </div>
+            </div>
+        </div>
+        </section>
+        
+        
+<!---------------------------------------end our product-------------------------------->
+        <!---------------------------------------our categories------------------------------------>
+        <section class="galary text-center" id="categories">
+        <div class="container">
+            <h1><span>Our</span> categories</h1>
+            <hr class="wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+            <div class="row">
+             <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home2">Apple</a></li>
+                <li><a data-toggle="tab" href="#menu8">Sony</a></li>
+                <li><a data-toggle="tab" href="#menu9">Dell</a></li>
+                <li><a data-toggle="tab" href="#menu10">hb</a></li>
+                <li><a data-toggle="tab" href="#menu11">Tosheba</a></li>
+                <li><a data-toggle="tab" href="#menu12">Samsung</a></li>
+                <li><a data-toggle="tab" href="#menu13">Htc</a></li>
+                <li><a data-toggle="tab" href="#menu14">Other</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home2" class="tab-pane fade in active">
+                   <div class="col-xs-12 col-md-3 galary-affect" id="a1">
+                <div class="products text-center">
+                        <img src="ap.jpg"data-aos="zoom-in">
+                        
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                        
+                </div>
+            </div>
+                <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                 <div class="products text-center">
+                        <img src="work_6.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                 </div>
+            </div>
+             <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                 <div class="products text-center">
+                        <img src="works-img3.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                 </div>
+            </div>
+             <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                 <div class="products text-center">
+                 <img src="work_5.jpg"data-aos="zoom-in">   
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                 </div>
+            </div>
+                <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_1.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="a1">
+                <div class="products text-center">
+                        <img src="work_2.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div> 
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="a1">
+                <div class="products text-center">
+                        <img src="  work_4.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="a1">
+                <div class="products text-center">
+                        <img src="work_3.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+                     <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                <div id="menu8" class="tab-pane fade">
+                  <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center"data-aos="zoom-in">
+                         <img src="ap.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+             <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                 <div class="products text-center">
+                        <img src="work_6.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                 </div>
+            </div>
+             <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                 <div class="products text-center">
+                        <img src="works-img3.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                 </div>
+            </div>
+             <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                 <div class="products text-center">
+                 <img src="work_5.jpg"data-aos="zoom-in">   
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                 </div>
+            </div>
+                <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_1.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_2.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                             <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_4.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect" id="b1">
+                <div class="products text-center">
+                        <img src="work_3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                          </div>
+                </div>
+            </div>
+                    <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                  <div id="menu9" class="tab-pane fade">
+                             <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_1.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_2.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                             <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_4.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect" id="b1">
+                <div class="products text-center">
+                        <img src="work_3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                          </div>
+                </div>
+            </div>
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                   <div class="products text-center"data-aos="zoom-in">
+                        <img src="ap.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                   </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="work_6.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                  </div>
+                <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="works-img3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                     <div class="products text-center">
+                         <img src="work_5.jpg"data-aos="zoom-in">   
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                     </div>
+                 </div>
+                    <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                <div id="menu10" class="tab-pane fade">
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                   <div class="products text-center"data-aos="zoom-in">
+                        <img src="ap.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                   </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="work_6.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                  </div>
+                           <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_1.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_2.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                             <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_4.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect" id="b1">
+                <div class="products text-center">
+                        <img src="work_3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                          </div>
+                </div>
+            </div>
+                <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="works-img3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                     <div class="products text-center">
+                         <img src="work_5.jpg"data-aos="zoom-in">   
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                     </div>
+                 </div>
+                    <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                  <div id="menu11" class="tab-pane fade">
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                   <div class="products text-center"data-aos="zoom-in">
+                        <img src="ap.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                   </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="work_6.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                  </div>
+                <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="works-img3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                 </div>
+                             <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_1.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_2.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                             <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_4.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect" id="b1">
+                <div class="products text-center">
+                        <img src="work_3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                          </div>
+                </div>
+            </div>
+                 <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                     <div class="products text-center">
+                         <img src="work_5.jpg"data-aos="zoom-in">   
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                     </div>
+                 </div>
+                    <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                  <div id="menu12" class="tab-pane fade">
+                             <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_1.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_2.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                             <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_4.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect" id="b1">
+                <div class="products text-center">
+                        <img src="work_3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                          </div>
+                </div>
+            </div>
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                   <div class="products text-center"data-aos="zoom-in">
+                        <img src="ap.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                   </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="work_6.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                  </div>
+                <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="works-img3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                     <div class="products text-center">
+                         <img src="work_5.jpg"data-aos="zoom-in">   
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                     </div>
+                 </div>
+                    <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                  <div id="menu13" class="tab-pane fade">
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                   <div class="products text-center"data-aos="zoom-in">
+                        <img src="ap.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                   </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="work_6.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                  </div>
+                <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="works-img3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                     <div class="products text-center">
+                         <img src="work_5.jpg"data-aos="zoom-in">   
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                     </div>
+                 </div>
+                             <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_1.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_2.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                             <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_4.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect" id="b1">
+                <div class="products text-center">
+                        <img src="work_3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                          </div>
+                </div>
+            </div>
+                    <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                  <div id="menu14" class="tab-pane fade">
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                   <div class="products text-center"data-aos="zoom-in">
+                        <img src="ap.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                   </div>
+                  </div>
+                             <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_1.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_2.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                             <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect"id="b1">
+                <div class="products text-center">
+                        <img src="work_4.jpg"data-aos="zoom-in">
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 galary-affect" id="b1">
+                <div class="products text-center">
+                        <img src="work_3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                          </div>
+                </div>
+            </div>
+                  <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="work_6.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                  </div>
+                <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                    <div class="products text-center">
+                        <img src="works-img3.jpg"data-aos="zoom-in">
+                          <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-md-3 galary-affect" id="c1">
+                     <div class="products text-center">
+                         <img src="work_5.jpg"data-aos="zoom-in">   
+                           <div class="overlay"data-aos="zoom-in">
+                            <div class="btn btn-danger"data-aos="zoom-out"data-aos-duration="1500">buy now</div>
+                           </div>
+                     </div>
+                 </div>
+                    <input type="submit" value="See More" class="contact-button" data-aos="fade-left">
+                </div>
+                  
+                
+              </div>
+            </div>
+        </div>
+        </section>
+        
+        
+<!---------------------------------------end our categories-------------------------------->
+<!---------------------------------------contact us------------------------------------><!--media--->
+      <!--  <section class="contact-us text-center" id="contact">
+             <div class="container">
+                 <div class="row">
+               <div class="col-md-12 text-center">
+               <h1><span>Contact</span> Us</h1>
+                <hr class="wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                </div>
+                
+                    <div class="col-md-6 col-xs-12 text-center">
+                           <form class="contact-form text-center">
+                                <input type="text" name="Fname" placeholder="Fname" required data-aos="fade-right">
+                                <input type="text" name="lname" placeholder="lname" required data-aos="fade-left">
+                                <input type="email" name="email" placeholder="email" required data-aos="fade-right">
+                                <input type="text" name="numder" placeholder="your number" required data-aos="fade-left">
+                                <textarea name="order" placeholder="your order or massege" required data-aos="fade-right"></textarea>
+                                <input type="submit" value="Send" class="contact-button" data-aos="fade-left">
+                           </form>
+                    </div>
+                         
+                    
+                </div>
+             </div>
+        </section>
+<!---------------------------------------end contact----------------------------------->
+<!---------------------------------------fotter------------------------------------>
+        <section class="fotter text-center">
+             <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xm-6 fotter-div"data-aos="fade-up" data-aos-duration="2000">
+                       <div class="b">
+                           <h1><a href="#"> <i class="fa fa-rocket fa-x fotter-icon"></i> TAnTA LiVE</a></h1>
+                       </div>
+                        <div class="social">
+                            <ul>
+                                <li><a href="">&emsp;<i class="fa fa-lg fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-lg fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-lg fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                   </div>
+                     <div class="col-md-3 col-sm-6 col-xm-6 fotter-div "data-aos="fade-up" data-aos-duration="2000">
+                       <div class="a">
+                           <h1>Company</h1>
+                           <ul class="fotter-link">
+                             <li data-aos="fade-right"><a href="#Our-Product">Our Product</a></li>
+                             <li data-aos="fade-left"><a href="#categories">Our categories</a></li>
+                             <li data-aos="fade-right"><a href="#contact">Contact Us</a></li>
+                           </ul>
+                       </div>
+                   </div>
+                     <div class="col-md-3 col-sm-6 col-xm-6 fotter-div"data-aos="fade-up" data-aos-duration="2000">
+                       <div class="a">
+                           <h1>Apple</h1>
+                           <ul class="fotter-link">
+                             <li data-aos="fade-right"><a href="#">iPhone7</a></li>
+                             <li data-aos="fade-left"><a href="#">iPhone plus</a></li>
+                             <li data-aos="fade-right"><a href="#">iPhone6</a></li>
+                             <li data-aos="fade-left"><a href="#">iPhone6 plus</a></li>
+                             <li data-aos="fade-right"><a href="#">Mac laptop</a></li>
+                             <li data-aos="fade-left"><a href="#">Mac Watches</a></li>
+                           </ul>
+                       </div>
+                   </div>
+                     <div class="col-md-3 col-sm-6 col-xm-6 fotter-div"data-aos="fade-up" data-aos-duration="2000">
+                       <div class="a">
+                           <h1>Samsang</h1>
+                           <ul class="fotter-link">
+                             <li data-aos="fade-right"><a href="#">Galaxy S7</a></li>
+                             <li data-aos="fade-left"><a href="#">Galaxy S6</a></li>
+                             <li data-aos="fade-right"><a href="#">Led full HD</a></li>
+                             <li data-aos="fade-left"><a href="#">Laptop</a></li>
+                             <li data-aos="fade-right"><a href="#">Smart phone</a></li>
+                             <li data-aos="fade-left"><a href="#">Grand 5</a></li>
+                             <li data-aos="fade-right"><a href="#">Grand 4</a></li>
+                           </ul>
+                       </div>
+                   </div>
+                </div>
+                 <p style="color:#ffffff;text-align:center; font-size:16px">&copy; 2017 All Right Reserved To </p>
+                  
+             </div>
+        </section>
+<!---------------------------------------end contact----------------------------------->
+<!------------------------------------------loding------------------------------------->
+        <!--<section class="loading-overlay text-center">
+           <div class="sk-cube-grid">
+              <div class="sk-cube sk-cube1"></div>
+              <div class="sk-cube sk-cube2"></div>
+              <div class="sk-cube sk-cube3"></div>
+              <div class="sk-cube sk-cube4"></div>
+              <div class="sk-cube sk-cube5"></div>
+              <div class="sk-cube sk-cube6"></div>
+              <div class="sk-cube sk-cube7"></div>
+              <div class="sk-cube sk-cube8"></div>
+              <div class="sk-cube sk-cube9"></div>
+            </div>
+        </section>-->
+        <div class="scrollToTop">
+            <i class="fa fa-chevron-up fa-2x"></i>
+        </div>
+<!--------------------------------------end loding------------------------------------->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="boot.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,734 @@
+/*------------------scrollbar--------------------------------*/
+::-webkit-scrollbar {
+    width: 8px;
+    height: 20px
+}
+::-webkit-scrollbar-button{
+   
+}
+::-webkit-scrollbar-button:active{
+   
+}
+::-webkit-scrollbar-thumb{
+    background-color: #cc2127;
+    border-radius: 5px
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #9a151a;
+    border-radius: 5px
+}
+::-webkit-scrollbar-thumb:active { 
+    background: #9a151a 
+}
+::-webkit-scrollbar-track{
+    width: 9px;
+    background-color: #d2d2d4;
+    border: .5px solid #d2d2d4;
+}
+::-webkit-scrollbar-track:hover{
+    
+}
+::-webkit-scrollbar:active{
+    background-color: #969696
+}
+body{
+    padding-top: 51px;
+    overflow: scroll;
+    width: 100%;
+}
+.btn{
+     transition: all .5s ease-in-out
+}
+.loginButton {
+    width: 100%;
+    height: 35px;
+    margin-top: 9%;
+    background: transparent;
+    border: none;
+    color: #9d9d9d;
+    font-size: 18px;
+}
+.loginButton:focus {
+    outline: 0
+}
+.container-fluid{
+    margin-left: 10px;
+    
+}
+.navbar-nav { /* البار كله*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:rgba(0, 0, 0, 0.4);
+    height: 50px;
+}
+.navbar-inverse {
+     background-color:#171530;
+}
+.search-ul {
+    width: 70%
+}
+.navbar-form{ /*الجزء بتاع البحث*/
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%
+}
+.navbar-form > div {
+    width: 90%
+}
+.form-control{/*الجزء الى هكتب فية ابحث عن اية*/
+    width: 250px;
+    background-color: #171530;
+}
+.search-input {
+    width: 100% !important;
+}
+.btn-search{
+    background-color: #171530;
+}
+.search-input:hover {
+    border-color: #fff;
+    box-shadow: none
+}
+.search-input:focus {
+    border-color: #fff;
+    box-shadow: none
+}
+.btn-search:hover{
+    background-color:#171530;
+    
+}
+.btn-search:hover li{
+    color: aliceblue
+}
+.btn-search :active{
+    background-color: #171530;
+}
+.searchBox {
+    margin-left: 3%;
+    width: 93%;
+    height: auto;
+    background: #171530;
+    overflow: hidden;
+    padding-bottom: 2%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: 
+}
+.searchBox > ul {
+    margin-top: 0;
+    float: left;
+    padding: 0;
+    width: 27%
+}
+.searchBox > ul:not(:last-child) {
+    margin-right: 6%
+}
+.searchBox > ul:first-child {
+    margin-left: 4%
+}
+.searchBox ul:not(:first-child) {
+    margin-top: 8.5%
+}
+.searchBox ul li {
+    list-style: none;
+    margin: 8px 10px 0 0;
+    font-size: 15px;
+    cursor: pointer;
+    color: #9d9d9d
+}
+.searchBox ul li label {
+    font-weight: normal;
+    cursor: pointer
+}
+.searchBox ul li input {
+    height: 15px;
+    width: 15px
+}
+.searchBox ul a:hover {
+    color: #1a4d7b
+}
+.navbar-inverse .navbar-brand {/*اسم الموقع*/
+    font-size: 22px;
+    color: red;
+    transition: all .5s ease-in-out
+}
+.nav > li{/*الحاجات الى فالبار*/
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+.navbar-nav {
+    background-color: #171530;
+}
+.nav > li:hover{
+    /* background-color: red;*/
+     height: 50px;
+}
+.navbar-nav > li > a  {/*اللينكات بتاعه البار*/
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all .5s ease-in-out
+    
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{/*لينكات البار*/
+    /*color: red*/;
+    font-size: 20px;
+    background-color: black
+}
+.navbar-inverse .navbar-nav > li > a:active{/*لينكات البار*/
+    /*color: red*/;
+    font-size: 20px;
+    background-color: red
+}
+.navbar-nav > li > a:hover{ /*الاشكال*/
+    color: red;
+   
+    
+}
+.navbar-inverse .navbar-nav > .open > a:focus{/*لما عمل اكتف على حاجة */
+    background-color: red;
+    transition: all .5s ease-in-out
+}
+
+li.dropdown {
+    display: inline-block;
+    transition: all .5s ease-in-out
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 180px;
+    box-shadow: 3px 3px 15px red;
+    border-radius: 4%;
+    color: black;
+    opacity: ;
+    
+    
+}
+.dropdown-menu > li > a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 180px;
+    transition: padding .5s ease-in-out;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: red;
+    opacity: 1px;
+    color: #ffffff;
+    font-weight: 50px;
+    padding-left: 25px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    
+}
+.carousel-inner{
+   
+    height:500px
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+    height: 500px
+}
+.carousel-caption{
+    bottom: 40px
+}
+
+.carousel-indicators >li{/*الدواير الى تحت*/
+    transition: all .5s ease-in-out;
+    border-radius: 0;
+    height: 2px;
+    width: 80px;
+    margin-top: -5px
+}
+.carousel-indicators >li:hover{
+    transform: scale(1);
+    
+}
+.carousel-indicators .active{
+    background: #535353;
+    border:  #535353;
+    width: 80px;
+    height: 3px;
+   
+}
+
+/*---------------------------------------galary----------------------------------*/
+.galary{
+     background-image: url(work_4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 800px;
+    width: 100%;
+    text-align: center;
+    padding-left: 30px;
+   
+    
+   
+}
+.galary h1{
+    text-align:center;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Arial,sans-serif;
+    text-transform: capitalize;
+    display: inline-block;
+    color: aliceblue;
+    text-shadow: 5px 5px 10px #fff
+}
+.galary span{
+    color: #9E2F5E;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Arial,sans-serif;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 10px #fff
+}
+.galary .galary-affect{
+    width: 260px;
+    height: 260px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+    
+   
+}
+.galary .galary-affect:hover .overlay{
+    display: inline-block;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+.galary hr {
+    border: 2px solid #c34347;
+    width: 11%;
+    margin-bottom: 30px;
+}
+.galary .galary-affect img{
+ width: 250px;
+ height: 250px;
+ border: 5px solid #ffffff;
+ transition: all .5s ease-in-out;
+}
+.galary .galary-affect img:hover{
+    transform: scale(1.05,1.05);
+    border:0px;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+
+.nav-tabs {
+   
+    margin-bottom: 20px;
+    font-family: Arial,sans-serif;
+    text-transform: capitalize;
+     font-size: 20px;
+    font-weight: 700;
+    transition: all .5s ease-in-out;
+    border-bottom: 1px solid #fff
+}
+.nav-tabs{
+    margin-left: 0px
+}
+.nav-tabs li{
+    min-width: 100px;
+    
+}
+.nav-tabs > li > a:hover{
+    background-color: aliceblue;
+    color: black
+    
+}
+.overlay {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    overflow: hidden;
+    top: 200px;
+    left: 5px;
+    top: 5px;
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+    transition: display 0.5s ease-in-out;
+}
+.overlay .btn-danger{
+    margin-top: 150px
+}
+/*---------------------------------------end galary----------------------------------*/
+.contact-button{
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    margin-left: 0px;
+    background-color:#c34347;
+    color: aliceblue;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    transition: all .5s ease-in-out;
+    font-size: 18px;
+     border-radius: 30px;
+    border: .1px solid #fff
+}
+.contact-button:hover{
+    background-color: #242135;
+    transition: all .5s ease-in-out;
+}
+.contact-button:focus{
+    outline: none
+}
+/*---------------------------------------contact us----------------------------------*/
+.contact-us{
+    background-image: url(contact-section-img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    text-align: center
+}
+.contact-us h1{
+    text-align:center;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Droid Serif', serif;
+    text-transform: capitalize;
+    display: inline-block;
+    color: aliceblue
+}
+.contact-us span{
+    color: #9E2F5E;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+     font-size: 40px;
+    font-weight: 700;
+    font-family: 'Droid Serif', serif;
+    text-transform: capitalize;
+}
+.contact-us hr {
+    border: 2px solid #c34347;
+    width: 11%;
+    margin-bottom: 30px;
+}
+.contact-us input{
+    width: 700px;
+    display: block;
+    height: 38px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin: 10px;
+    margin-left: 200px
+}
+.contact-us textarea{
+     width: 700px;
+    display: block;
+    height: 200px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin: 10px;
+    margin-left: 200px
+}
+.contact-us textarea:focus{
+    box-shadow: 3px 3px 10px #1870d3
+}
+.contact-us input:focus{
+    box-shadow: 3px 3px 10px #1870d3
+}
+
+.contact-us .contact-button{
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    margin-left: 800px;
+    background-color:#c34347;
+    color: aliceblue;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    transition: all .5s ease-in-out;
+    font-size: 18px
+}
+.contact-us .contact-button:hover{
+    background-color: #242135;
+    transition: all .5s ease-in-out;
+}
+.contact-us.contact-button:focus{
+    outline: none
+}
+/*---------------------------------------end contact----------------------------------*/
+.fotter{
+    background-color: #333;
+    
+   /* border: 2px dashed black;*/
+    
+}
+.fotter-div{
+     background-color: #333;
+    /*border: 2px dashed black;*/
+    height: 270px;
+    text-align: center;
+}
+.fotter h1{
+    text-align:center;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Droid Serif', serif;
+    text-transform: capitalize;
+    display: inline-block;
+    color: aliceblue;
+    margin-left: 30px
+}
+.fotter-icon{
+    color: red
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: all .5s ease-in-out
+}
+a:hover,a:focus{
+    text-decoration: none;
+    color: #fff
+}
+a:active{
+    text-decoration: none;
+    color: #fff;
+    transition: all .5s ease-in-out
+}
+.fotter-link li{
+    list-style: none;
+    text-align: center
+}
+.social {
+    margin: 0;
+    padding: 0;
+}
+
+.social ul {
+    margin: 0;
+    padding: 5px;
+}
+
+.social ul li {
+    margin: 5px;
+    list-style: none outside none;
+    display: inline-block;
+}
+.social i {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #909AA0;
+    font-size: 22px;
+    text-align:center;
+    padding-top: 12px;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+}
+
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transform: scale(1.2,1.2);
+    transition: all ease 0.3s;
+}
+/*---------------------------------------loding------------------------------------*/
+.loading-overlay{
+    background-color: #eb6df0;
+    color: aliceblue;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    top: 0;
+    left: 0
+}
+.sk-cube-grid {
+  width: 50px;
+  height: 50px;
+  margin: 100px auto;
+ margin-top: 300px
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #fff;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
+/*------------------------------------------end loding---------------------------------------*/
+.scrollToTop{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    color: aliceblue;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 4px #c34347, 2px 1px 6px 4px;
+    transition: 0.5s;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    z-index: 999;
+    background-color: #c34347;
+    display: none;
+    cursor: pointer
+    
+}
+.scrollToTop:hover{
+    color: #333;
+    border: 2px solid #c34347;
+    box-shadow: 0 0 0 4px #ffffff, 2px 1px 6px 4px;
+    transition: 0.5s;
+}
+/*----------------------------------------------------------*/
+@media(max-width:960px)
+{
+.contact-us input{
+    width: 330px;
+    margin: 10px;
+    margin-left: 0px
+}
+.contact-us textarea{
+     width: 330px;
+    margin: 10px;
+    margin-left: 0px
+}
+.contact-us .contact-button{
+   
+    height: 40px;
+    width: 100px;
+    margin-left: 230px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+}
+@media(max-width:480px)
+{
+.contact-us input{
+    width: 260px;
+    margin: 10px;
+    margin-left: 0px
+}
+.contact-us textarea{
+     width: 260px;
+    margin: 10px;
+    margin-left: 0px
+}
+.contact-us .contact-button{
+   
+    height: 40px;
+    width: 100px;
+    margin-left: 160px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.product .galary-affect{
+    width: 260px;
+    height: 260px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: -5px;
+    position: relative
+   
+}
+.galary .galary-affect{
+    width: 260px;
+    height: 260px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: -5px;
+    position: relative
+   
+}
+.slid-btn{
+    width: 70px;
+    margin-bottom: 15px;
+}
+.btn-primary{
+    width: 90px    
+}
+}
+/*----------------------------------------------------------*/
